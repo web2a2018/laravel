@@ -24,16 +24,16 @@ class AdminsTableSeeder extends Seeder
       /**
       * Use Eloquent
       */
-      // \App\Admin::create([
-      //   'name'	=> str_random(10),
-      //   'email'	=> str_random(10) . '@gmail.com',
-      //   'password'	=> bcrypt('secret'),
-      //   'job_title' => str_random(10)
-      // ]);
+      \App\Admin::create([
+        'name'	=> 'Dewi Anisa',
+        'email'	=> 'dewianisaist.ugm@gmail.com',
+        'password'	=> bcrypt('secret'),
+        'job_title' => 'Admin'
+      ]);
 
       /**
       * Use Model factory
       */
-      factory(\App\Admin::class, 3)->create();
+      // factory(\App\Admin::class, 3)->create();
     }
 }
